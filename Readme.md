@@ -17,15 +17,30 @@ Create a function that memoizes the result of a &#x60;fn&#x60;.
 ```js
 var memoize = require('@micro-js/memoize')
 
+var slow = memoize(function (num) {
+  var calc = 0
+  for (var i = 0; i < num; ++i) {
+    calc += i
+  }
+  return calc
+})
+
+// slow
+slow(100) // => 4950
+
+// fast
+slow(100) // => 4950
+
+
 ```
 
 ## API
 
-### memoize(arg)
+### memoize(fn)
 
-- `arg` -
+- `fn` - a function to memoize
 
-**Returns:**
+**Returns:** memoized function
 
 ## License
 
