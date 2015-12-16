@@ -1,5 +1,5 @@
 {
-  "name": "@micro-js/memoize",
+  "name": "@f/memoize",
   "description": "Create a function that memoizes the result of a &#x60;fn&#x60;.",
   "repository": "git://github.com/micro-js/memoize.git",
   "version": "1.0.0",
@@ -9,7 +9,7 @@
     "postversion": "git push && git push --tags && npm publish --access=public"
   },
   "dependencies": {
-    "@micro-js/slice": "^1.0.0"
+    "@f/slice": "^1.0.0"
   },
   "devDependencies": {
     "tape": "^4.2.2"
